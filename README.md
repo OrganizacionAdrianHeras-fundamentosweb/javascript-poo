@@ -1,2 +1,2 @@
-# javascript-poo
-Este repositorio contiene ejemplos de como usar javascript orientado a objetos
+### What is OOP?
+Programming paradigm focus on objects instead of functions

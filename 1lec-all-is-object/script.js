@@ -16,16 +16,16 @@ console.log(typeof new Number(100)); // object
 console.log(typeof new String('Hello world')); // object
 console.log(typeof new Boolean(true)); // object
 
-console.log(100);
-console.log(new Number(100));
-console.log('Hello world');
-console.log(new String('Hello world'));
-console.log(true);
-console.log(new Boolean(true));
+console.log(100); // 100
+console.log(new Number(100)); // Number { 100 }
+console.log('Hello world'); // Hello world
+console.log(new String('Hello world')); // String { 'Hello world' }
+console.log(true); // true
+console.log(new Boolean(true)); // Boolean { true }
 
 /* 
   methods -> The object has methods. And also, It can use methods from a private 
   value, because JavaScript temporarily converts primitive types like strings into
   objects when you call methods on them.
 */
-console.log(typeof 'Hello world'.toUpperCase());
+console.log(typeof 'Hello world'.toUpperCase()); // string

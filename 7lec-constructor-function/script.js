@@ -8,9 +8,12 @@ const user = {
 }
 
 /*
-  Declaring a constructor with JavaScript
+  This is how you declare and function constructor in Javascript.
 */
 function Person() {
+  /*
+    instance members of the constructor
+  */
   this.name = '';
   this.lastname = '';
   this.age = 0;
@@ -18,6 +21,9 @@ function Person() {
     return `${this.name} ${this.lastname}`;
   }
 }
+
+// The function constructor is a function type obiously.
+console.log(typeof Person); // function
 
 const user2 = new Person();
 user2.name = 'Joe';

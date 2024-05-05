@@ -1,5 +1,7 @@
-this.name = 'su';
-this.age = 13;
+/*
+  new -> it allow you to create a new object instance. 
+*/
+
 /*
   new Object() -> It is the same that declare {} 
 */
@@ -11,8 +13,7 @@ console.log(person.constructor === Object); // true
 console.log(person2.constructor === Object); // true
 
 /* 
-  Creating a number using Number class.
-  It's similar to create a number using Number class.
+  Creating a new Number instance.
 */
 const number = new Object(2);
 const number2 = new Number(2);
@@ -20,8 +21,7 @@ console.log(number); // Number {2}
 console.log(number2); // Number {2}
 
 /*
-  Creating a string using Object class.
-  It's similar to create a string using String class.
+  Creating a new String instance.
 */
 
 const string = new Object('Hello World');
@@ -30,7 +30,7 @@ console.log(string); // String {'Hello World'}
 console.log(string2); // String {'Hello World'}
 
 /*
-  I can add some methods or attributes to the instances
+  I can add some methods or attributes to the instances dinamically.
 */
 number.add = function(val) {
   return this + Number.parseInt(val);
@@ -62,10 +62,3 @@ const user = {
     return this.name;
   }
 }
-
-// get the keys of object properties
-console.log(Object.keys(user)); // ['name','lastname','age','showName']
-// get the values of object properties
-console.log(Object.values(user)); // ['','',30,f]
-
-

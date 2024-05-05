@@ -1,5 +1,8 @@
 /*
-  this -> It reference to object instance
+  this -> It reference to the value of object instance.
+  Likewise, the functions and properties which are declared by 'this'
+  keyword become in instance members of the constructor, since they can
+  be accesed by all object instances.
 */
 const user = {
   name: 'Ryan',

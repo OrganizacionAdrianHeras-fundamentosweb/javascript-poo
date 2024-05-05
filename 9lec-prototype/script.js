@@ -12,9 +12,14 @@ const person3 = new Person('Maria', 'Perez');
 const person4 = new Person('Jose', 'Perez');
 
 /*
- prototype -> it allow you to alter the constructor template and you can add
- another method or property. Therefore, all instances are able to use this new
- method / property.
+ prototype -> In Javascript every object has a property called 'prototype'.
+ This property is in fact an object who is used primarily for inheritance and 
+ to provide shared properties and functions to other objects.
+*/
+
+/*
+ adding a function and a property to Person's prototype in order 
+ to all Person's instances inherit this and can use it then.
 */
 Person.prototype.greet = function() {
   return `Hello, I am ${this.name}`
